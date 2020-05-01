@@ -8,7 +8,7 @@ class Navbar extends Component {
     const { level, changeLevel } = this.props;
     return (
       <header className="Navbar">
-        <div className="logo ">
+        <div className="logo">
           <a href="#">ColorPalette</a>
         </div>
         <div className="slider-container">
