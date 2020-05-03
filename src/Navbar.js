@@ -4,6 +4,7 @@ import { MenuItem, Snackbar, Select, IconButton } from "@material-ui/core";
 import CloseIcon from "@material-ui/icons/Close";
 import "rc-slider/assets/index.css";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 class Navbar extends Component {
   constructor(props) {
@@ -25,7 +26,7 @@ class Navbar extends Component {
     return (
       <header className="Navbar">
         <div className="logo">
-          <a href="#">ColorPalette</a>
+          <Link to="/">ColorPalette</Link>
         </div>
         <div className="slider-container">
           <span>Level : {level}</span>
@@ -50,7 +51,11 @@ class Navbar extends Component {
           anchorOrigin={{ vertical: "bottom", horizontal: "left" }}
           open={this.state.open}
           autoHideDuration={3000}
-          message={<span id="message-id">Format Changed To {format.toUpperCase()} </span>}
+          message={
+            <span id="message-id">
+              Format Changed To {format.toUpperCase()}{" "}
+            </span>
+          }
           ContentProps={{
             "aria-describedby": "message-id",
           }}
