@@ -6,7 +6,7 @@ const styles = {
     backgroundColor: "white",
     border: "1px solid black",
     borderRadius: "5px",
-    padding: "0.5rem",
+    padding: "0.4rem",
     position: "relative",
     overflow: "hidden",
     "&:hover": {
@@ -15,7 +15,7 @@ const styles = {
   },
   colors: {
     backgroundColor: "#dae1e4",
-    height: "150px",
+    height: "100px",
     width: "100%",
     borderRadius: "5px",
     overflow: "hidden",
@@ -27,7 +27,7 @@ const styles = {
     margin: "0",
     color: "black",
     paddingTop: "0.5rem",
-    fontSize: "1rem",
+    fontSize: "0.7rem",
     position: "relative",
   },
   emoji: {
