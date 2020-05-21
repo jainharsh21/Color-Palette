@@ -13,7 +13,7 @@ import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import { ChromePicker } from "react-color";
 import { Button } from "@material-ui/core";
 
-const drawerWidth = 400;
+const drawerWidth = 350;
 
 const styles = (theme) => ({
   root: {
