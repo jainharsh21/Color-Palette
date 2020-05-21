@@ -18,6 +18,11 @@ class App extends Component {
       <Switch>
         <Route
           exact
+          path="/palette/new"
+          render={() => <h1>New Palette Form!</h1>}
+        />
+        <Route
+          exact
           path="/"
           render={(routeProps) => (
             <PaletteList palettes={seedColors} {...routeProps} />
