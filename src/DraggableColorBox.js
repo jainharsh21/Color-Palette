@@ -3,8 +3,13 @@ import { withStyles } from "@material-ui/core/styles";
 
 const styles = {
   root: {
-    height: "100px",
-    width: "100px",
+    width: "20%",
+    height: "25%", 
+    margin: "0 auto",
+    display: "inline-block",
+    position: "relative",
+    cursor: "pointer",
+    marginBottom: "-4px",
   },
 };
 
