@@ -58,14 +58,15 @@ export default {
   },
   boxContent: {
     position: "absolute",
-    padding: "10px",
     width: "100%",
     left: "0px",
     bottom: "0px",
+    padding: "10px",
     color: "black",
     letterSpacing: "1px",
     textTransform: "uppercase",
     fontSize: "12px",
+    
   },
   copyOverlay: {
     opacity: "0",
