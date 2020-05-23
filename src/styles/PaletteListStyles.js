@@ -1,10 +1,11 @@
 export default {
   root: {
     backgroundColor: "blue",
-    height: "100vh",
+    height: "10 0vh",
     display: "flex",
     alignItems: "flex-start",
     justifyContent: "center",
+    overflow: "scroll",
   },
   container: {
     width: "50%",
@@ -19,9 +20,9 @@ export default {
     justifyContent: "space-between",
     alignItems: "center",
     color: "white",
-    "& a" : {
-      color : "white", 
-    }
+    "& a": {
+      color: "white",
+    },
   },
   palettes: {
     boxSizing: "border-box",
