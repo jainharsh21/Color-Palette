@@ -83,7 +83,7 @@ class NewPaletteForm extends Component {
       open: true,
       currentColor: "teal",
       newColorName: "",
-      colors: this.props.palettes[0].colors, 
+      colors: this.props.palettes[0].colors,
       newPaletteName: "",
     };
     this.updateCurrentColor = this.updateCurrentColor.bind(this);
@@ -91,6 +91,7 @@ class NewPaletteForm extends Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.removeColor = this.removeColor.bind(this);
+    this.clearColors = this.clearColors.bind(this);
   }
 
   componentDidMount() {
@@ -136,6 +137,10 @@ class NewPaletteForm extends Component {
     this.setState({
       [evt.target.name]: evt.target.value,
     });
+  }
+
+  clearColors() {
+    this.setState({ colors: [] });
   }
 
   handleSubmit() {
@@ -219,7 +224,11 @@ class NewPaletteForm extends Component {
           <Divider />
           <Typography variant="h4">Design Your Palette!</Typography>
           <div>
-            <Button variant="contained" color="secondary">
+            <Button
+              variant="contained"
+              color="secondary"
+              onClick={this.clearColors}
+            >
               Clear Palette
             </Button>
             <Button variant="contained" color="primary">
