@@ -83,7 +83,7 @@ class NewPaletteForm extends Component {
       open: true,
       currentColor: "teal",
       newColorName: "",
-      colors: [{ color: "blue", name: "blue" }],
+      colors: this.props.palettes[0].colors, 
       newPaletteName: "",
     };
     this.updateCurrentColor = this.updateCurrentColor.bind(this);
@@ -262,7 +262,7 @@ class NewPaletteForm extends Component {
             colors={this.state.colors}
             removeColor={this.removeColor}
             axis="xy"
-            onSortEnd = {this.onSortEnd}
+            onSortEnd={this.onSortEnd}
           />
         </main>
       </div>
