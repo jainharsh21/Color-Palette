@@ -15,6 +15,7 @@ import { Button } from "@material-ui/core";
 import { ValidatorForm, TextValidator } from "react-material-ui-form-validator";
 import DraggableColorList from "./DraggableColorList";
 import { arrayMove } from "react-sortable-hoc";
+import { Link } from "react-router-dom";
 
 const drawerWidth = 350;
 
@@ -216,6 +217,11 @@ class NewPaletteForm extends Component {
               <Button variant="contained" color="primary" type="submit">
                 Save Palette
               </Button>
+              <Link to="/">
+                <Button variant="contained" color="secondary" >
+                  Go Back
+                </Button>
+              </Link>
             </ValidatorForm>
           </Toolbar>
         </AppBar>
@@ -247,7 +253,7 @@ class NewPaletteForm extends Component {
               variant="contained"
               color="primary"
               onClick={this.addRandomColor}
-              disabled={paletteIsFull} 
+              disabled={paletteIsFull}
             >
               Random Color
             </Button>
