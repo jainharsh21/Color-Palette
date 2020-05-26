@@ -12,7 +12,7 @@ import { arrayMove } from "react-sortable-hoc";
 import PaletteFormNav from "./PaletteFormNav";
 import ColorPickerForm from "./ColorPickerForm";
 
-const drawerWidth = 350;
+const drawerWidth = 400;
 
 const styles = (theme) => ({
   root: {
@@ -28,6 +28,8 @@ const styles = (theme) => ({
   },
   drawerPaper: {
     width: drawerWidth,
+    display: "flex",
+    alignItems: "center",
   },
   drawerHeader: {
     display: "flex",
@@ -54,14 +56,19 @@ const styles = (theme) => ({
     marginLeft: 0,
   },
   container: {
-    // width: "90%",
+    width: "90%",
     height: "100%",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
   },
-  buttons: {},
+  buttons: {
+    width: "100%",
+  },
+  button: {
+    width: "50%",
+  },
 });
 
 class NewPaletteForm extends Component {
@@ -165,10 +172,11 @@ class NewPaletteForm extends Component {
           </div>
           <Divider />
           <div className={classes.container}>
-            <Typography variant="h4">Design Your Palette!</Typography>
+            <Typography variant="h4" gutterBottom>Design Your Palette!</Typography>
             <div className={classes.buttons}>
               <Button
                 variant="contained"
+                className={classes.button}
                 color="secondary"
                 onClick={this.clearColors}
               >
@@ -176,6 +184,7 @@ class NewPaletteForm extends Component {
               </Button>
               <Button
                 variant="contained"
+                className={classes.button}
                 color="primary"
                 onClick={this.addRandomColor}
                 disabled={paletteIsFull}
