@@ -3,7 +3,7 @@ export default {
     backgroundColor: "white",
     border: "1px solid black",
     borderRadius: "5px",
-    padding: "0.4rem",
+    padding: "0.5rem",
     position: "relative",
     overflow: "hidden",
     "&:hover": {
@@ -12,7 +12,7 @@ export default {
   },
   colors: {
     backgroundColor: "#dae1e4",
-    height: "100px",
+    height: "150px",
     width: "100%",
     borderRadius: "5px",
     overflow: "hidden",
@@ -20,15 +20,16 @@ export default {
   title: {
     display: "flex",
     justifyContent: "space-between",
-    align: "center",
+    alignItems: "center",
     margin: "0",
     color: "black",
     paddingTop: "0.5rem",
-    fontSize: "0.7rem",
+    fontSize: "1rem",
     position: "relative",
   },
   emoji: {
     marginLeft: "0.5rem",
+    fontSize: "1.5rem",
   },
   miniColor: {
     height: "25%",
