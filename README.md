@@ -1,3 +1,7 @@
+# Color Palette
+
+## A massive color palette project created using ReactJS and other tools like MaterialUI,ChromaJS,etc
+
 ![Screenshot (135)](https://user-images.githubusercontent.com/44740658/83379262-b7daad00-a3f8-11ea-9bf0-e2ca4965bce1.png)
 ![Screenshot (136)](https://user-images.githubusercontent.com/44740658/83379264-b90bda00-a3f8-11ea-854f-4395d6ff6e42.png)
 ![Screenshot (138)](https://user-images.githubusercontent.com/44740658/83379268-bad59d80-a3f8-11ea-91ad-5dd09e93e62b.png)
